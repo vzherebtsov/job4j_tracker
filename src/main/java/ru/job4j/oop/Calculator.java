@@ -27,13 +27,13 @@ public class Calculator {
         int result = Calculator.sum(10);
         System.out.println(result);
         Calculator calculator = new Calculator();
-        int result1 = calculator.multiply(5);
-        System.out.println(result1);
-        int result2 = Calculator.minus(7);
-        System.out.println(result2);
-        int result3 = calculator.divide(20);
-        System.out.println(result3);
-        int result4 = calculator.sumAllOperation(10);
-        System.out.println(result4);
+        result = calculator.multiply(5);
+        System.out.println(result);
+        result = Calculator.minus(7);
+        System.out.println(result);
+        result = calculator.divide(20);
+        System.out.println(result);
+        result = calculator.sumAllOperation(10);
+        System.out.println(result);
     }
 }

@@ -69,8 +69,7 @@ public class AnalyzeByMap {
         List<Label> labels = new ArrayList<>();
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                maps.putIfAbsent(subject.name(), 0);
-                maps.put(subject.name(), maps.get(subject.name()) + subject.score());
+                maps.merge(subject.name(), subject.score(), (oldVal, newVal) -> oldVal + newVal);
             }
         }
         for (String subject : maps.keySet()) {

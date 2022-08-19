@@ -92,7 +92,7 @@ public class BankService {
      * @param srcRequisite реквизиты, по которым осуществляется поиск счета пользователя.
      * @param destPassport паспорт, по которому осуществляется поиск пользователя.
      * @param destRequisite реквизиты, по которым осуществляется поиск счета пользователя.
-     * @param amount баланс счета.
+     * @param amount сумма перевода.
      * @return возвращает true, если перевод осуществлен успешно и false, если нет
      */
     public boolean transferMoney(String srcPassport, String srcRequisite,
